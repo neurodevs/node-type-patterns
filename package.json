@@ -1,6 +1,7 @@
 {
-  "name": "node-type-patterns",
+  "name": "@neurodevs/node-type-patterns",
   "version": "0.0.1",
+  "main": "build/index.js",
   "repository": "https://github.com/neurodevs/node-type-patterns.git",
   "scripts": {
     "build.ci": "yarn run build.tsc && yarn run build.resolve-paths && yarn run lint",
