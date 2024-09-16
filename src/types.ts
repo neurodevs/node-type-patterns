@@ -2,8 +2,8 @@ export interface FileLoader<Content> {
     load: (path: string) => Promise<Content>
 }
 
-export interface Extractor<Content, Result> {
-    extract: (data: Content) => Result
+export interface RuleExtractor<Content, Rule, Result> {
+    extract: (data: Content, rules: Rule[]) => Result
 }
 
 export interface SyncRunnable<Result = void> {
